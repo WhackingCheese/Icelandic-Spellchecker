@@ -240,7 +240,7 @@ function resizeBoxes() {
  */
 function load_data(d) {
     var client = new XMLHttpRequest();
-    client.open('GET', 'https://notendur.hi.is/mic5/maltaekni/spellchecker/res/ordmyndir.txt');
+    client.open('GET', 'https://notendur.hi.is/mic5/Icelandic-Spellchecker/ordmyndir.txt');
     client.onload = function() {
         d.style.display = "none";
         dict = generateDict(client.responseText.split("\n"));
