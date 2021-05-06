@@ -1,2 +1,2 @@
 # Icelandic-Spellchecker
- TÖL025M - Inngangur að Máltækni -  Lokaverkefni
+Inngangur að Máltækni - TÖL025M (2020) - Lokaverkefni

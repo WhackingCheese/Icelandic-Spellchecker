@@ -1,0 +1,170 @@
+:root {
+    --page-color: #edf2f4;
+    --shadow-tyoe: 2px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    --spec-red: rgb(202, 70, 79);
+    --font-fam: 'Montserrat', sans-serif;
+    --font-thi: 400;
+}
+
+body {
+    margin: 0;
+    min-width: 500px;
+    background-color: #52606D;
+}
+
+button, textarea {
+    font-family: var(--font-fam);
+    font-weight: var(--font-thi);
+}
+
+.spellcheck {
+    position: absolute;
+    margin: 20px 10% 20px 10%;
+    width: 80%;
+}
+
+.spellcheck_input {
+    width: 100%;
+}
+
+.spellcheck_output.enabled {
+    padding: 50px;
+    min-height: 200px;
+    box-shadow: var(--shadow-tyoe);
+    font-family: var(--font-fam);
+    font-weight: var(--font-thi);
+    background-color: var(--page-color);
+    font-size: 16px;
+    line-height: 200%;
+}
+
+.spellcheck_input_text {
+    padding: 50px;
+    resize: none;
+    width: 100%;
+    text-align: justify;
+    min-height: 250px;
+    border: 0;
+    background-color: var(--page-color);
+    box-shadow: var(--shadow-tyoe);
+    font-size: 16px;
+    line-height: 200%;
+}
+
+.spellcheck_input_text:focus {
+    outline-width: 0;
+}
+
+.spellcheck_run {
+    --width: 120px;
+    --height: 45px;
+    background-color: var(--page-color);
+    border: 0;
+    width: 120px;
+    height: 45px;
+    padding: 10px 10px;
+    margin: 25px calc(50% - var(--width)/2) 25px calc(50% - var(--width)/2);
+    box-shadow: var(--shadow-tyoe);
+    transition: color 0.5s ease;
+    font-weight: 600;
+}
+
+.spellcheck_run:focus {
+    outline: none;
+    border: 0;
+    border: 1px solid var(--spec-red);
+}
+
+.spellcheck_run:hover {
+    color: var(--spec-red);
+    cursor: pointer;
+}
+
+.spellcheck_output_inner span, select {
+    display: inline;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 200%;
+    font-family: var(--font-fam);
+    font-weight: var(--font-thi);
+}
+
+.spellcheck_output_inner span {
+    padding: 0;
+    margin: 0;
+}
+
+.spellcheck_output_inner select {
+    appearance: none;
+    background-color: var(--page-color);
+    border: 0;
+    color: var(--spec-red);
+}
+
+.spellcheck_output_inner option {
+    color: black;
+}
+
+.spellcheck_output_inner option:first-child {
+    color: var(--spec-red);
+}
+
+.spellcheck_output_inner select:focus {
+    outline-width: 0;
+    border: 0;
+}
+
+.spellcheck_copy {
+    display: none;
+}
+
+.spellcheck_copy.enabled {
+    display: inline-block;
+    --width: 120px;
+    --height: 45px;
+    background-color: var(--page-color);
+    border: 0;
+    width: 120px;
+    height: 45px;
+    padding: 10px 10px;
+    margin: 25px calc(50% - var(--width)/2) 25px calc(50% - var(--width)/2);
+    box-shadow: var(--shadow-tyoe);
+    transition: color 0.5s ease;
+    font-weight: 600;
+}
+
+.spellcheck_copy:focus {
+    outline: none;
+    border: 0;
+    border: 1px solid var(--spec-red);
+}
+
+.spellcheck_copy:hover {
+    color: var(--spec-red);
+    cursor: pointer;
+}
+
+.results {
+    font-size: 16px;
+    font-family: var(--font-fam);
+    font-weight: 600;
+    color: var(--page-color);
+}
+
+.blinder {
+    background-color: #52606D;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-fam);
+    font-weight: 600;
+    font-size: 76px;
+    color: var(--page-color);
+    position: absolute;
+    z-index: 1000;
+}
+
+.blinder h1 {
+    text-align: center;
+    margin-top: 25%;
+    z-index: 1000;
+}
